@@ -1,0 +1,55 @@
+html, body, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.esri-widget {
+    margin: 10px;
+}
+
+.esri-ui-bottom-left, .esri-ui-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.esri-ui-bottom-left {
+    align-items: flex-start;
+}
+
+.esri-ui-bottom-right {
+    align-items: flex-end;
+}
+
+/* Réduire la taille de BasemapGallery */
+.esri-basemap-gallery {
+    width: 150px;  /* Largeur réduite */
+    height: auto;  /* Hauteur automatique pour ne pas déformer le widget */
+    font-size: 12px;  /* Réduire la taille du texte */
+}
+
+/* Réduire la taille de la Légende */
+.esri-legend {
+    width: 150px;  /* Largeur réduite */
+    font-size: 12px;  /* Réduire la taille du texte */
+}
+
+/* Réduire la taille de la Liste des couches */
+.esri-layer-list {
+    width: 150px;  /* Largeur réduite */
+    font-size: 12px;  /* Réduire la taille du texte */
+}
+
+/* Réduire proportionnellement l'ensemble du widget */
+.esri-widget {
+    transform: scale(0.8);  /* Réduit la taille de tous les widgets à 80% */
+    transform-origin: top left;  /* Garde l'ancrage du widget dans le coin supérieur gauche */
+}
+
+/* Ajuster la taille du widget de recherche */
+.esri-search {
+    width: 150px;  /* Ajuster la largeur pour le widget de recherche */
+    font-size: 12px;  /* Réduire la taille du texte */
+}
